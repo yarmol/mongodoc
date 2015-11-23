@@ -1,0 +1,11 @@
+<config>
+	<context-values>
+		<resource path="src/main/resources/main.ftl">
+			<value key="re" object-class="java.lang.String"/>
+			<value key="user" object-class="java.lang.String"/>
+			<value key="i" object-class="java.lang.Integer"/>
+		</resource>
+	</context-values>
+	<macro-library>
+	</macro-library>
+</config>
