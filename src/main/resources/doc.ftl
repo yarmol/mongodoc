@@ -3,6 +3,13 @@
 <h1>Document ${doc_number}</h1>
 <table border=1>
 
+<#list attributes as attribute>
+    <tr>
+        <td>${attribute.name}</td>
+        <td>${attribute.value}</td>
+    </tr>
+</#list>
+
 <#list grid as grid_row>
     <tr><td>${grid_row.row_id}</td><td>${grid_row.invent}</td><td>${grid_row.count}</td>
 
@@ -12,6 +19,8 @@
 
     </tr>
 </#list>
+
+
 </table>
 </body>
 </HTML>

@@ -13,4 +13,12 @@
     <property name="dbNameConnection" value="${db}" />
  </bean>
 
+    <bean id="morphia" class="org.mongodb.morphia.Morphia">
+    </bean>
+
+   <!-- <bean id="dataStore" class="org.mongodb.morphia.DatastoreImpl">
+        <constructor-arg ref="morphia"></constructor-arg>
+        <constructor-arg value="${db}"></constructor-arg>
+    </bean> -->
+
 </beans>

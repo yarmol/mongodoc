@@ -2,7 +2,7 @@
 
 package mongo;
 
-import com.mongodb.
+
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
@@ -16,8 +16,13 @@ import me.jarad.mongo.service.SessionService;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 import org.bson.types.ObjectId;
+import org.mongodb.morphia.annotations.Entity;
 import spark.*;
 import me.jarad.mongo.service.BasicService;
+import spark.servlet.SparkApplication;
+import spark.utils.SparkUtils;
+import spark.webserver.SparkServerFactory;
+
 import java.io.StringWriter;
 import java.util.*;
 
@@ -39,6 +44,8 @@ public class Starter {
 
     static MongoClient client                   = connectionDao.getClient();
     static MongoDatabase db                     = connectionDao.getDb();
+
+
 
 
     public static void main(String[] args) {
@@ -67,8 +74,8 @@ public class Starter {
                     boolean accessGranted = SessionService.checkCredentials(login, pass);
                     if (accessGranted) {
                         SessionService.startSession(login, request);
-                        DocumentService docService = new DocumentService();
-                        return docService.mainPageLoad(request, response, getConf() );
+                        DocumentService docService = new DocumentService( getConf() , db);
+                        return docService.mainPageLoad(request, response);
                     }
                     else {
                         Spark.halt(401, "Wrong credentials");
@@ -106,35 +113,13 @@ public class Starter {
         Spark.get("/page/docid/:id", (request, response) -> {
 
             Map<String, String> reqParams = request.params();
-            StringWriter writer = new StringWriter();
-            String id = reqParams.get(":id");
-            Template tmpl = conf.getTemplate("doc.ftl");
-            Map<String, Object> params = new HashMap<>();
-            params.put("doc_number", getDocNumber(id));
-            params.put("grid", getGridDoc(id));
-            tmpl.process(params, writer);
-            return writer;
+            DocumentService documentService = new DocumentService(getConf(), db);
+            return documentService.getDocument(request, response, reqParams.get(":id"));
 
         });
     }
 
 
-    public static String getDocNumber(String id) {
-        Bson filter = Filters.eq("_id",new ObjectId(id));
-        Bson selector = Projections.fields(Projections.include("number"),Projections.excludeId());
-        Document doc = db.getCollection("documents").find(filter).projection(selector).sort(Sorts.ascending("number")).first();
-        return ((Integer)doc.get("number")).toString();
-    }
 
-    public static ArrayList<Document> getGridDoc(String id) {
-        Bson filter = Filters.eq("_id",new ObjectId(id));
-        Bson selector = Projections.fields(Projections.include("grid"),Projections.excludeId());
-        Document doc = db.getCollection("documents").find(filter).projection(selector).sort(Sorts.ascending("number")).first();
-        ArrayList<Document> grid = (ArrayList<Document>)doc.get("grid");
-
-        System.out.println((String)grid.get(0).toJson());
-
-        return grid;
-    }
 
 }
