@@ -2,49 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17e6c160-2bc0-4874-8123-9e4cb4872ab5" name="Default" comment="+ ODM support (morphia)&#10;+ Spring load morphia">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/AbstractInitDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/morphia/AbstractMorphiaDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/nat/AbstractNativeDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/service/BasementObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/morphia/DocumentMorphiaDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/nat/DocumentNativeDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DocumentRowDomain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DomainObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/EntityObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/ExceptionDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/FactoryDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/ObjectDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/gears/StrategyDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/UserEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/morphia/UserMorphiaDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/view/ViewObject.java" />
-      <change type="DELETED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\Bo\DocumentDomainObject.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\Bo\GridDomainObject.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\AbstractDao.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\DaoException.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\DocumentDao.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\SessionDao.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\UserDao.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\ConnectionDao.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/ConnectionDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DocumentRowsDomain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dto/DtoFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/me/jarad/mongo/dto/DtoFactoryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/me/jarad/mongo/dao/FactoryDaoTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/UserDomain.java" />
+      <change type="DELETED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\business\DocumentRowDomain.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\_work\prj.java\java2\mongo\target\classes\META-INF\MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="E:\_work\prj.java\java2\mongo\target\classes\META-INF\maven\me.jaraf\mongo\pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\_work\prj.java\java2\mongo\target\classes\META-INF\maven\me.jaraf\mongo\pom.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/me/jarad/mongo/service/DocumentService.class" afterPath="$PROJECT_DIR$/target/classes/me/jarad/mongo/service/DocumentService.class" />
+      <change type="MODIFICATION" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\morphia\AbstractMorphiaDao.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/morphia/AbstractMorphiaDao.java" />
+      <change type="MODIFICATION" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\nat\AbstractNativeDao.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/nat/AbstractNativeDao.java" />
+      <change type="MODIFICATION" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\persistance\DocumentEntity.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/DocumentEntity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/service/DocumentService.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/service/DocumentService.java" />
-      <change type="MODIFICATION" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\ErrorDao.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/ErrorDao.java" />
-      <change type="MODIFICATION" beforePath="E:\_work\prj.java\java2\mongo\src\test\java\me\jarad\mongo\dao\HasherTest.java" afterPath="$PROJECT_DIR$/src/test/java/me/jarad/mongo/dao/HasherTest.java" />
-      <change type="MODIFICATION" beforePath="E:\_work\prj.java\java2\mongo\src\test\java\me\jarad\mongo\dao\SessionDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/me/jarad/mongo/dao/SessionDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/service/SessionService.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/service/SessionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mongo/Starter.java" afterPath="$PROJECT_DIR$/src/main/java/mongo/Starter.java" />
-      <change type="MODIFICATION" beforePath="E:\_work\prj.java\java2\mongo\src\test\java\me\jarad\mongo\dao\UserDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/me/jarad/mongo/dao/UserDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongo.iml" afterPath="$PROJECT_DIR$/mongo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring.conf.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring.conf.xml" />
+      <change type="MODIFICATION" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\FactoryDao.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/FactoryDao.java" />
+      <change type="MODIFICATION" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\ObjectDao.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/ObjectDao.java" />
+      <change type="MODIFICATION" beforePath="E:\_work\prj.java\java2\mongo\src\test\java\me\jarad\mongo\dao\ObjectDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/me/jarad/mongo/dao/ObjectDaoTest.java" />
+      <change type="MODIFICATION" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dto\Track.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dto/Track.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/connection.properties" afterPath="$PROJECT_DIR$/target/classes/connection.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/doc.ftl" afterPath="$PROJECT_DIR$/target/classes/doc.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/docs.ftl" afterPath="$PROJECT_DIR$/target/classes/docs.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/error.html" afterPath="$PROJECT_DIR$/target/classes/error.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/index.html" afterPath="$PROJECT_DIR$/target/classes/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main.ftl" afterPath="$PROJECT_DIR$/target/classes/main.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/register.html" afterPath="$PROJECT_DIR$/target/classes/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/start.html" afterPath="$PROJECT_DIR$/target/classes/start.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\Bo\DomainClient.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/DomainClient.java" />
-      <change type="MOVED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\DbFactory.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/gears/DbFactory.java" />
-      <change type="MOVED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\FieldPatternMapper.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/gears/FieldPatternMapper.java" />
-      <change type="MOVED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\Hasher.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/gears/Hasher.java" />
-      <change type="MOVED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\KeyInChecker.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/gears/KeyInChecker.java" />
-      <change type="MOVED" beforePath="E:\_work\prj.java\java2\mongo\src\main\java\me\jarad\mongo\dao\Operators.java" afterPath="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/gears/Operators.java" />
-      <change type="MOVED" beforePath="E:\_work\prj.java\java2\mongo\src\test\java\me\jarad\mongo\Bo\DomainClientTest.java" afterPath="$PROJECT_DIR$/src/test/java/me/jarad/mongo/business/DomainClientTest.java" />
     </list>
     <ignored path="mongo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,66 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DocumentNativeDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/nat/DocumentNativeDao.java">
+      <file leaf-file-name="FactoryDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/FactoryDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="32" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="32" />
-              <folding>
-                <element signature="e#2851#2852#0" expanded="true" />
-                <element signature="e#2878#2879#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasementObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/service/BasementObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="31" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectDaoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/me/jarad/mongo/dao/ObjectDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Track.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dto/Track.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6583851">
-              <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
-              <folding>
-                <element signature="method#cast#0;class#Track#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DocumentMorphiaDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/morphia/DocumentMorphiaDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DocumentRowsEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/DocumentRowsEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.5769231">
+              <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,11 +63,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Class.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/java/src.zip!/java/lang/Class.java">
+      <file leaf-file-name="FactoryDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/me/jarad/mongo/dao/FactoryDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1785" column="0" selection-start-line="1785" selection-start-column="0" selection-end-line="1785" selection-end-column="0" />
+              <caret line="25" column="57" selection-start-line="20" selection-start-column="8" selection-end-line="25" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DtoFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dto/DtoFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-23.5">
+              <caret line="144" column="9" selection-start-line="93" selection-start-column="6" selection-end-line="144" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#fillAttributes#0;class#DtoFactory#0" expanded="false" />
+                <element signature="e#2620#2650#0" expanded="true" />
+                <element signature="method#toDocument#0;class#DtoFactory#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DtoFactoryTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/me/jarad/mongo/dto/DtoFactoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6093418">
+              <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocumentDomain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DocumentDomain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="32" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -168,12 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/service/DocumentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mongo/Starter.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring.conf.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/Dao/ConnectionDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/Bo/DocumentDomainObject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/me/jarad/mongo/Bo/DomainClientTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/BusinessLayer/GridDomainObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/PersistanceLayer.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/Persistance/DocumentDomainObject.java" />
@@ -186,8 +144,6 @@
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/EntityObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/view/ViewObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DomainObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DocumentRowDomain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DocumentDomain.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/AbstractODMDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/AbstractDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/AbstractODMNativeDao.java" />
@@ -198,11 +154,9 @@
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/AbstractParamsDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/DocumentDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/gears/StrategyDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/nat/AbstractNativeDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/AbstractInitDao.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/ObjectEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/morphia/AbstractMorphiaDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/UserEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/nat/DocumentNativeDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/i.java" />
@@ -210,15 +164,25 @@
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/ClientDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/morphia/DocumentMorphiaDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/morphia/UserMorphiaDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/FactoryDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/me/jarad/mongo/business/DomainClientTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/ObjectDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/nat/SessionNativeDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/nat/UserNativeDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/DocumentRowsEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/DocumentEntity.java" />
         <option value="$PROJECT_DIR$/src/test/java/me/jarad/mongo/dao/ObjectDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/service/DocumentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/UserDomain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DocumentRowDomain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DocumentRowsDomain.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dto/Track.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DocumentDomain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/DocumentEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/ObjectDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/morphia/AbstractMorphiaDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/nat/AbstractNativeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/FactoryDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jarad/mongo/dto/DtoFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/me/jarad/mongo/dao/FactoryDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/me/jarad/mongo/dto/DtoFactoryTest.java" />
       </list>
     </option>
   </component>
@@ -367,40 +331,6 @@
               <option name="myItemId" value="mongo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="business" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -498,6 +428,130 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="morphia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane">
@@ -563,6 +617,7 @@
       <recent name="me.jarad.mongo.Business" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="me.jarad.mongo.dto" />
       <recent name="me.jarad.mongo.dao" />
       <recent name="me.jarad.mongo.Bo" />
       <recent name="me.jarad.mongo.Dao" />
@@ -571,7 +626,7 @@
       <recent name="me.jarad.mongo.business" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObjectDaoTest.testAdd">
+  <component name="RunManager" selected="JUnit.DtoFactoryTest.testFillObject">
     <configuration default="false" name="Starter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -590,58 +645,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="mongo" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="HasherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="me.jarad.mongo.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="mongo" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="me.jarad.mongo.dao" />
-      <option name="MAIN_CLASS_NAME" value="me.jarad.mongo.dao.HasherTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="me.jarad.mongo.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="mongo" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="me.jarad.mongo.dao" />
-      <option name="MAIN_CLASS_NAME" value="me.jarad.mongo.dao.UserDaoTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="false" name="DomainClientTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -683,6 +686,58 @@
       <option name="PACKAGE_NAME" value="me.jarad.mongo.dao" />
       <option name="MAIN_CLASS_NAME" value="me.jarad.mongo.dao.ObjectDaoTest" />
       <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="FactoryDaoTest.testGetDaoProviderDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="me.jarad.mongo.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="mongo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="me.jarad.mongo.dao" />
+      <option name="MAIN_CLASS_NAME" value="me.jarad.mongo.dao.FactoryDaoTest" />
+      <option name="METHOD_NAME" value="testGetDaoProviderDocument" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DtoFactoryTest.testFillObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="me.jarad.mongo.dto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="mongo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="me.jarad.mongo.dto" />
+      <option name="MAIN_CLASS_NAME" value="me.jarad.mongo.dto.DtoFactoryTest" />
+      <option name="METHOD_NAME" value="testFillObject" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -947,18 +1002,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Starter" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.HasherTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UserDaoTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DomainClientTest.testAdd" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ObjectDaoTest.testAdd" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DomainClientTest.testAdd" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ObjectDaoTest.testAdd" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FactoryDaoTest.testGetDaoProviderDocument" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DtoFactoryTest.testFillObject" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ObjectDaoTest.testAdd" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DomainClientTest.testAdd" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Starter" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UserDaoTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.HasherTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DtoFactoryTest.testFillObject" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FactoryDaoTest.testGetDaoProviderDocument" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ObjectDaoTest.testAdd" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DomainClientTest.testAdd" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Starter" />
       </list>
     </recent_temporary>
   </component>
@@ -970,32 +1025,32 @@
       <option name="number" value="Default" />
       <updated>1446205712556</updated>
       <workItem from="1446205725712" duration="37065000" />
-      <workItem from="1448275852406" duration="40522000" />
+      <workItem from="1448275852406" duration="57285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77587000" />
+    <option name="totallyTimeSpent" value="94350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="0" width="1364" height="728" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29886913" sideWeight="0.47329378" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29886913" sideWeight="0.28857568" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4378029" sideWeight="0.14762612" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19709209" sideWeight="0.15207715" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39256865" sideWeight="0.49703264" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4378029" sideWeight="0.8523739" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19709209" sideWeight="0.84792286" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27670622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27670622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44749597" sideWeight="0.49703264" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39579967" sideWeight="0.49406528" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1052,7 +1107,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -1061,140 +1116,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/docs.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/start.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver/3.0.0-rc0/mongodb-driver-3.0.0-rc0.jar!/com/mongodb/QueryBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28374657">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#8598#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="8" column="60" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/doc.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/morphia/morphia/0.109/morphia-0.109.jar!/org/mongodb/morphia/annotations/Entity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42669585">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver/3.0.0-rc0/mongodb-driver-3.0.0-rc0.jar!/org/bson/BSONObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42669585">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/service/DocumentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/gears/DbFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.81677">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding>
-            <element signature="e#1509#1510#0" expanded="true" />
-            <element signature="e#1543#1544#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring.conf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58074534">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="e#700#708#0" expanded="false" />
-            <element signature="e#754#763#0" expanded="false" />
-            <element signature="e#808#821#0" expanded="false" />
-            <element signature="e#869#876#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/morphia/morphia/0.109/morphia-0.109.jar!/org/mongodb/morphia/Morphia.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.88">
-          <caret line="152" column="32" selection-start-line="152" selection-start-column="19" selection-end-line="152" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mongo/Starter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/view/ViewObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21472393">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/java/src.zip!/java/lang/reflect/Constructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.7730062">
-          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/gears/Operators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21472393">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/ExceptionDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15337424">
@@ -1351,46 +1272,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/nat/AbstractNativeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/FactoryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/DomainClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DocumentDomain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DocumentRowDomain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.030674847">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1435,16 +1320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/ObjectDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/me.jarad.mongo.service.BasementObject">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1477,25 +1352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DomainObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32608697">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/nat/DocumentNativeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="32" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="32" />
-          <folding>
-            <element signature="e#2851#2852#0" expanded="true" />
-            <element signature="e#2878#2879#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/service/BasementObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1525,24 +1381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/DocumentRowsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/java/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1785" column="0" selection-start-line="1785" selection-start-column="0" selection-end-line="1785" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/me/jarad/mongo/business/DomainClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32608697">
@@ -1553,47 +1391,272 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/DocumentEntity.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/bson/3.0.0-rc0/bson-3.0.0-rc0.jar!/org/bson/codecs/configuration/CodecCache.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51863354">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.6296296">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/DocumentRowsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.3757763">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/morphia/AbstractMorphiaDao.java">
+    <entry file="jar://C:/java/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0248448">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.33229813">
+          <caret line="1785" column="0" selection-start-line="1785" selection-start-column="0" selection-end-line="1785" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/morphia/DocumentMorphiaDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mongo/AppFreemarker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3322785">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/service/DocumentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3322785">
+          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/gears/DbFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3322785">
+          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DomainObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30172414">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/java/src.zip!/java/lang/FunctionalInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69827586">
+          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/java/src.zip!/java/util/function/BiConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8936782">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/java/src.zip!/java/util/function/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/java/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="128" column="17" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/java/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="609" column="13" selection-start-line="609" selection-start-column="13" selection-end-line="609" selection-end-column="13" />
+          <folding>
+            <element signature="e#24298#24299#0" expanded="false" />
+            <element signature="e#24363#24364#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/bson/3.0.0-rc0/bson-3.0.0-rc0.jar!/org/bson/Document.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60990715">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DocumentRowsDomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/me/jarad/mongo/dao/ObjectDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.2795031">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/UserDomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6896552">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/nat/AbstractNativeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="20" />
+          <folding>
+            <element signature="e#1605#1606#0" expanded="true" />
+            <element signature="e#1632#1633#0" expanded="true" />
+            <element signature="e#1704#1705#0" expanded="true" />
+            <element signature="e#1731#1732#0" expanded="true" />
+            <element signature="e#1793#1794#0" expanded="true" />
+            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#2469#2470#0" expanded="true" />
+            <element signature="e#2496#2497#0" expanded="true" />
+            <element signature="e#2548#2549#0" expanded="true" />
+            <element signature="e#2575#2576#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/java/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61180127">
+          <caret line="240" column="30" selection-start-line="240" selection-start-column="30" selection-end-line="240" selection-end-column="30" />
+          <folding>
+            <element signature="e#10065#10066#0" expanded="false" />
+            <element signature="e#10148#10149#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dto/Track.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6583851">
-          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.44256756">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
-            <element signature="method#cast#0;class#Track#0" expanded="false" />
+            <element signature="method#Track#0;class#Track#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/morphia/AbstractMorphiaDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32608697">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/nat/DocumentNativeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3726708">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="e#2851#2852#0" expanded="true" />
+            <element signature="e#2878#2879#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/morphia/DocumentMorphiaDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6614907">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/FactoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5769231">
+          <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dao/ObjectDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7546584">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/persistance/DocumentEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9068323">
+          <caret line="52" column="27" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/me/jarad/mongo/dao/FactoryDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="57" selection-start-line="20" selection-start-column="8" selection-end-line="25" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/dto/DtoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.5">
+          <caret line="144" column="9" selection-start-line="93" selection-start-column="6" selection-end-line="144" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#fillAttributes#0;class#DtoFactory#0" expanded="false" />
+            <element signature="e#2620#2650#0" expanded="true" />
+            <element signature="method#toDocument#0;class#DtoFactory#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jarad/mongo/business/DocumentDomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/me/jarad/mongo/dto/DtoFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6093418">
+          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

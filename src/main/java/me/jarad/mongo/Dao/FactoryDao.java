@@ -1,25 +1,28 @@
 package me.jarad.mongo.dao;
 
-import me.jarad.mongo.dao.gears.StrategyDao;
-import me.jarad.mongo.dao.morphia.DocumentMorphiaDao;
-
+import me.jarad.mongo.dao.*;
+import me.jarad.mongo.dao.gears.*;
+import me.jarad.mongo.dao.morphia.*;
+import me.jarad.mongo.dao.nat.*;
 import java.util.HashMap;
+import java.util.Map;
+
 
 /**
  * Created by vitaly on 25.11.2015.
  */
 public class FactoryDao {
 
-    private static HashMap<StrategyDao, String> mapperDocuments;
-    private static HashMap<StrategyDao, String> mapperUsers;
+    private static Map<StrategyDao, String> mapperDocuments = new HashMap<>();
+    private static Map<StrategyDao, String> mapperUsers = new HashMap<>();
     static  {
-        mapperDocuments.put(StrategyDao.NATIVE,"DocumentNativeDao");
-        mapperDocuments.put(StrategyDao.MORPHIA,"DocumentMorphiaDao");
-        mapperUsers.put(StrategyDao.MORPHIA,"UserMorphiaDao");
-        mapperUsers.put(StrategyDao.NATIVE,"UserNativeDao");
+        mapperDocuments.put(StrategyDao.NATIVE,"me.jarad.mongo.dao.nav.DocumentNativeDao");
+        mapperDocuments.put(StrategyDao.MORPHIA,"me.jarad.mongo.dao.morphia.DocumentMorphiaDao");
+        mapperUsers.put(StrategyDao.MORPHIA,"me.jarad.mongo.dao.morphia.UserMorphiaDao");
+        mapperUsers.put(StrategyDao.NATIVE,"me.jarad.mongo.dao.nav.UserNativeDao");
     }
 
-    public static ObjectDao getDaoProvider(HashMap<StrategyDao, String> map, StrategyDao strategyDao) {
+    public static ObjectDao getDaoProvider(Map<StrategyDao, String> map, StrategyDao strategyDao) {
         String className = map.get(strategyDao);
 
         ObjectDao objectDao = null;

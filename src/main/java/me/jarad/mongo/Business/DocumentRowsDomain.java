@@ -8,7 +8,7 @@ import me.jarad.mongo.persistance.EntityObject;
  */
 
 
-public class DocumentRowDomain implements EntityObject {
+public class DocumentRowsDomain implements EntityObject {
 
 
     private int row_id;
@@ -59,5 +59,7 @@ public class DocumentRowDomain implements EntityObject {
     }
 
 
+    DocumentRowsDomain() {
 
+    }
 }

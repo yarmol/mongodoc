@@ -74,6 +74,12 @@ public class AbstractMorphiaDao<EntityObject> extends AbstractInitDao implements
     }
 
     @Override
+    public EntityObject getbyField(String field, Object value) {
+        Query<EntityObject> query = getDatastore().createQuery(getClassDescriptor());
+        return query.field(field).equal(value).limit(1).get();
+    }
+
+    @Override
     public EntityObject get(Object id) {
 
         Query<EntityObject> query = getDatastore().createQuery(getClassDescriptor());

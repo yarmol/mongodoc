@@ -55,6 +55,21 @@ public abstract class AbstractNativeDao extends AbstractInitDao implements Objec
         getCollection().insertOne(doc);
     }
 
+    @Override
+    public Iterable<Document> getIterator() {
+        return null;
+    }
+
+    @Override
+    public List<Document> getList(int limit, int skip) {
+        return null;
+    }
+
+    @Override
+    public List<Document> getList(int limit) {
+        return null;
+    }
+
     //protected void add(EntityObject entity) {
     //    ds.save(entity);
     //}
@@ -78,6 +93,16 @@ public abstract class AbstractNativeDao extends AbstractInitDao implements Objec
     public Document get(String id) {
         Bson filter = Filters.eq("_id", id);
         return getCollection().find(filter).first();
+    }
+
+    @Override
+    public Document getbyField(String field, Object value) {
+        return null;
+    }
+
+    @Override
+    public Document get(Object id) {
+        return null;
     }
 
     public Document get(ObjectId id) {

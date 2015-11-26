@@ -38,6 +38,8 @@ public class ObjectDaoTest {
         daoDoc.add(doc);
 
         Track trackDTO = new Track(doc);
+
+        System.out.println("Track = ");
         System.out.println(trackDTO.toString());
 
         assertTrue(doc.getGrid().size() > 0);

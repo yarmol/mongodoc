@@ -81,7 +81,7 @@ public class DocumentEntity implements EntityObject{
 
     @PreSave()
     public void beforeSave(DBObject dbObj) {
-        System.out.println(dbObj.toString());
+
 
         ArrayList<DBObject> docGrid = (ArrayList)dbObj.get("grid");
         double sum = 0;
@@ -93,7 +93,11 @@ public class DocumentEntity implements EntityObject{
         dbObj.put("doc_sum",sum);
     }
 
-
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Entity: " + getKind() + " #" +getNumber() + " = " + getDocSum());
+        return sb.toString();
+    }
 
 
 }

@@ -47,7 +47,7 @@ public class DocumentService {
         Document doc = db.getCollection("documents").find(filter).projection(selector).sort(Sorts.ascending("number")).first();
         ArrayList<Document> grid = (ArrayList<Document>)doc.get("grid");
 
-        System.out.println((String)grid.get(0).toJson());
+        //System.out.println((String)grid.get(0).toJson());
 
         return grid;
     }

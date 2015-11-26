@@ -21,6 +21,8 @@ public interface ObjectDao<T> {
 
     T get(String id);
 
+    T getbyField(String field, Object value);
+
     T get(Object id);
 
 }
