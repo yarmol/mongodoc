@@ -1,17 +1,17 @@
-package me.jarad.mongo.Dao;
+package me.jarad.mongo.dao;
 
 /**
  * Created by vitaly on 04.11.2015.
  */
-public class DaoException extends Throwable {
+public class ExceptionDao extends Throwable {
     private String errorDescription;
 
 
-    public DaoException() {
+    public ExceptionDao() {
         super();
     }
 
-    public DaoException(String desc) {
+    public ExceptionDao(String desc) {
         super();
         errorDescription = desc;
 

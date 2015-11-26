@@ -1,6 +1,4 @@
-package me.jarad.mongo.Dao;
-
-import java.util.Optional;
+package me.jarad.mongo.dao;
 
 /**
  * Created by vitaly on 04.11.2015.

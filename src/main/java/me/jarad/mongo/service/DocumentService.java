@@ -7,13 +7,12 @@ import com.mongodb.client.model.Sorts;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
-import me.jarad.mongo.Dao.DocumentDao;
+import me.jarad.mongo.dao.nat.DocumentNativeDao;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 import org.bson.types.ObjectId;
 import spark.Request;
 import spark.Response;
-import spark.Spark;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -77,7 +76,7 @@ public class DocumentService {
             Map<String,Object> params = new HashMap<>();
             params.put("user", req.session(false).attribute("user"));
             params.put("time", dateFormat.format(new Date(req.session(false).raw().getCreationTime())).toString());
-            params.put("table", (LinkedList<Document>)(new DocumentDao()).getDocs());
+            params.put("table", (LinkedList<Document>)(new DocumentNativeDao()).getDocs());
 
             tmpl.process(params,writer);
         }

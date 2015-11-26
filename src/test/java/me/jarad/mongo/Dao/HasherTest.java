@@ -1,4 +1,6 @@
-package me.jarad.mongo.Dao;
+package me.jarad.mongo.dao;
+
+import me.jarad.mongo.dao.gears.Hasher;
 
 import static org.junit.Assert.*;
 

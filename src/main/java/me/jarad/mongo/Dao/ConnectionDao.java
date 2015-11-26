@@ -1,19 +1,14 @@
-package me.jarad.mongo.Dao;
+package me.jarad.mongo.dao;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import me.jarad.mongo.dao.gears.DbFactory;
 import org.mongodb.morphia.Datastore;
-import org.mongodb.morphia.DatastoreImpl;
 import org.mongodb.morphia.Morphia;
-import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 import org.bson.Document;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.util.CollectionUtils;
-
-import java.util.Collection;
-import java.util.Properties;
 
 /**
  * Created by vitaly on 30.10.2015.

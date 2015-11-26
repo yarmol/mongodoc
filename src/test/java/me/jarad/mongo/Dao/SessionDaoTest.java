@@ -1,15 +1,13 @@
-package me.jarad.mongo.Dao;
+package me.jarad.mongo.dao;
 
+import me.jarad.mongo.dao.nat.SessionNativeDao;
 import org.junit.Test;
-import spark.Session;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by vitaly on 23.11.2015.
  */
 public class SessionDaoTest {
-    SessionDao sessionDao = new SessionDao();
+    SessionNativeDao sessionDao = new SessionNativeDao();
 
     @Test
     public void testAddSession() throws Exception {

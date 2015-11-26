@@ -1,19 +1,14 @@
 package me.jarad.mongo.service;
 
-import freemarker.template.Template;
-import me.jarad.mongo.Dao.SessionDao;
-import me.jarad.mongo.Dao.UserDao;
-import mongo.Starter;
+import me.jarad.mongo.dao.nat.SessionNativeDao;
+import me.jarad.mongo.dao.nat.UserNativeDao;
 import org.bson.Document;
 import spark.Request;
 import spark.Response;
 import spark.Session;
 import spark.Spark;
 
-import javax.servlet.ServletContext;
 import java.io.StringWriter;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by vitaly on 04.11.2015.
@@ -36,7 +31,7 @@ public class SessionService {
         //tmpl.process(params, writer);
         //return writer;
 
-        UserDao user = new UserDao();
+        UserNativeDao user = new UserNativeDao();
         boolean result = user.addUser(login,pass,email);
         if (result) {
             writer = BasicService.simpleLoad("index.html", request, response);
@@ -69,7 +64,7 @@ public class SessionService {
 
         Session session = request.session(true);
         session.attribute("user",login);
-        SessionDao sessionDao = new SessionDao();
+        SessionNativeDao sessionDao = new SessionNativeDao();
         sessionDao.addSession(session,login);
         //ServletContext context = session.raw().getServletContext();
         //context.setAttribute(login,session);
@@ -81,7 +76,7 @@ public class SessionService {
     public static boolean checkCredentials(String login, String pass) {
 
 
-        UserDao user = new UserDao();
+        UserNativeDao user = new UserNativeDao();
         boolean checkingResult = user.checkUserCredentials(login,pass);
 
         return checkingResult;

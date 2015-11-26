@@ -1,11 +1,9 @@
-package me.jarad.mongo.Dao;
+package me.jarad.mongo.dao;
 
+import me.jarad.mongo.dao.nat.UserNativeDao;
 import org.bson.Document;
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -14,7 +12,7 @@ import static org.junit.Assert.*;
  * Created by vitaly on 23.11.2015.
  */
 public class UserDaoTest {
-    UserDao user = new UserDao();
+    UserNativeDao user = new UserNativeDao();
 
     @Test
     public void testAddUser() throws Exception {

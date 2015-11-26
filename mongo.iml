@@ -37,6 +37,7 @@
     <orderEntry type="library" name="Maven: org.mongodb.morphia:morphia:0.109" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:mongo-java-driver:2.12.3" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb.morphia:morphia-util:0.109" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:18.0" level="project" />
     <orderEntry type="library" name="Maven: cglib:cglib-nodep:3.2.0" level="project" />
     <orderEntry type="library" name="Maven: com.thoughtworks.proxytoys:proxytoys:1.0" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />

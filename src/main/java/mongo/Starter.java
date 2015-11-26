@@ -5,25 +5,13 @@ package mongo;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.model.Filters;
-import com.mongodb.client.model.Projections;
-import com.mongodb.client.model.Sorts;
 import freemarker.template.Configuration;
-import freemarker.template.Template;
-import me.jarad.mongo.Dao.*;
+import me.jarad.mongo.dao.*;
 import me.jarad.mongo.service.DocumentService;
 import me.jarad.mongo.service.SessionService;
-import org.bson.Document;
-import org.bson.conversions.Bson;
-import org.bson.types.ObjectId;
-import org.mongodb.morphia.annotations.Entity;
 import spark.*;
 import me.jarad.mongo.service.BasicService;
-import spark.servlet.SparkApplication;
-import spark.utils.SparkUtils;
-import spark.webserver.SparkServerFactory;
 
-import java.io.StringWriter;
 import java.util.*;
 
 

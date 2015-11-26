@@ -27,6 +27,11 @@
           <!-- See https://github.com/mongodb/morphia/releases for the latest version -->
           <version>0.109</version>
       </dependency>
+      <dependency>
+          <groupId>com.google.guava</groupId>
+          <artifactId>guava</artifactId>
+          <version>18.0</version>
+      </dependency>
 
       <!-- Optional Jars (for certain features) but required by maven for building. -->
       <dependency>
