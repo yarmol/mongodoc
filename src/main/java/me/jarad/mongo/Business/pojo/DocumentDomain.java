@@ -1,101 +1,73 @@
-package me.jarad.mongo.persistance;
+package me.jarad.mongo.business.pojo;
 
-import com.mongodb.DBObject;
 import me.jarad.mongo.view.Views;
 import org.bson.types.ObjectId;
-import org.mongodb.morphia.annotations.*;
 
 import java.util.ArrayList;
 
 /**
- * Created by vitaly on 24.11.2015.
+ * Created by vitaly on 25.11.2015.
  */
 
-@Entity(value = "documents", noClassnameStored = true)
-public class DocumentEntity implements EntityObject{
+public class DocumentDomain implements DomainObject {
 
-    @Id
+
     private ObjectId id;
-
     private int number;
+    private String kind;
+    private String author;
+    private double docSum;
+    private ArrayList<DocumentRowsDomain> grid;
 
     public String getKind() {
         return kind;
     }
-
     public void setKind(String kind) {
         this.kind = kind;
     }
-
     public ObjectId getId() {
         return id;
     }
-
     public void setId(ObjectId id) {
         this.id = id;
     }
-
     public int getNumber() {
         return number;
     }
-
     public void setNumber(int number) {
         this.number = number;
     }
-
     public String getAuthor() {
         return author;
     }
-
     public void setAuthor(String author) {
         this.author = author;
     }
-
     public double getDocSum() {
         return docSum;
     }
-
     public void setDocSum(double docSum) {
         this.docSum = docSum;
     }
-
-    public ArrayList<DocumentRowsEntity> getGrid() {
+    public ArrayList<DocumentRowsDomain> getGrid() {
         return grid;
     }
 
-    public void setGrid(ArrayList<DocumentRowsEntity> grid) {
+
+    public void setGrid(ArrayList<DocumentRowsDomain> grid) {
         this.grid = grid;
     }
 
-    private String kind;
+    public DocumentDomain() {
 
-
-
-
-    private String author;
-
-    @Property("doc_sum")
-    private double docSum;
-
-    @Embedded
-    private ArrayList<DocumentRowsEntity> grid;
-
-    @PreSave()
-    public void beforeSave(DBObject dbObj) {
-
-
-        ArrayList<DBObject> docGrid = (ArrayList)dbObj.get("grid");
-        double sum = 0;
-        for (DBObject row : docGrid) {
-
-             sum += (double)row.get("sun");
-
-        }
-        dbObj.put("doc_sum",sum);
     }
 
+
+
+    @Override
     public String toString() {
         return Views.toStringView(this);
+
     }
 
 

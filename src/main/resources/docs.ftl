@@ -1,8 +1,9 @@
 <HTML>
 <body>
-<h1>Documents</h1>
+<h1>Documents : </h1>
 <h3>user: ${user}</h3>
 <h3>time: ${time}</h3>
+<h4><a href="/page/newdoc/">New document</a></h4>
 <table border=1>
 <#list table as row>
 <tr><td><a href="/page/docid/${row._id}">${row.number}</a></td><td>${row.author}</td><td>${row.kind}</td><td>${row.doc_sum}</td></tr>

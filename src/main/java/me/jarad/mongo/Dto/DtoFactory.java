@@ -1,9 +1,10 @@
 package me.jarad.mongo.dto;
 
-import me.jarad.mongo.business.DocumentRowsDomain;
-import me.jarad.mongo.business.DomainObject;
-import me.jarad.mongo.persistance.EntityObject;
-import me.jarad.mongo.service.BasementObject;
+
+import me.jarad.mongo.business.pojo.DomainObject;
+import me.jarad.mongo.persistance.*;
+import me.jarad.mongo.view.*;
+import me.jarad.mongo.service.*;
 import org.bson.Document;
 
 import java.lang.reflect.Field;
@@ -17,6 +18,18 @@ import java.util.function.*;
  */
 public class DtoFactory {
 
+
+    public static Track.TypeTrack getType(BasementObject object) {
+        Track.TypeTrack type = null;
+        if (object instanceof EntityObject) {
+            type = Track.TypeTrack.ENTITY;
+        } else if (object instanceof DomainObject) {
+            type = Track.TypeTrack.DOMAIN;
+        } else if (object instanceof ViewObject) {
+            type = Track.TypeTrack.VIEW;
+        }
+        return type;
+    }
 
     public static String firstLetterUpper(String word, boolean withLowerCase) {
         String firstLetter =  word.substring(0, 1).toUpperCase();
@@ -43,6 +56,7 @@ public class DtoFactory {
      * @param object
      * @return
      */
+    @Deprecated
     public static void fillAttributes(BasementObject object, Map<String,Object> attributes) {
         Class clazz             = object.getClass();
         Field[] fields          = clazz.getDeclaredFields();
@@ -87,51 +101,134 @@ public class DtoFactory {
 
     }
 
+    /**
+     * Fill map with attributes of object
+     * Every iterable attribute represented as List internal Map.
+     *
+     * @param obj
+     * @param attrs
+     */
+    public static void fillAttributesMap(BasementObject obj, Map<String,Object> attrs) {
 
 
-    @SuppressWarnings("unchecked")
+
+        Class clazz = obj.getClass();
+        Field[] fields = clazz.getDeclaredFields();
+
+        for (Field field : fields) {
+            String fieldName = field.getName();
+            String getterName = DtoFactory.getAccessorName.apply("get", fieldName);
+
+            Object value = null;
+
+            try {
+                value = clazz.getMethod(getterName).invoke(obj);
+            } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+                e.printStackTrace();
+                continue;
+            }
+
+
+            Map<String,Object> rowDocument = null;
+
+            if (value instanceof List) {
+
+                Iterator listIterator = ((List) value).iterator();
+                List<Map<String,Object>> table = new ArrayList<>();
+                while (listIterator.hasNext()) {
+
+                    BasementObject listValue     = (BasementObject)listIterator.next();
+                    Class clazzListValue         = listValue.getClass();
+
+
+                    rowDocument = new HashMap<>();
+                    fillAttributesMap(listValue, rowDocument);
+                    table.add(rowDocument);
+
+                }
+
+                attrs.put(fieldName, table);
+
+
+
+            } else {
+                attrs.put(fieldName, value);
+            }
+
+
+        }
+
+    }
+
+
+
     public static void fillObject (Map<String,Object> attributes, BasementObject object) {
+
+
+
+
         for (String key : attributes.keySet()) {
 
+            if (key == "DETERMINATOR") {
+                continue;
+            }
+
             Object value = attributes.get(key);
-            System.out.println( key + "=" + value) ;
+
             Class clz = object.getClass();
+
+
             Method method = null;
             try {
-
-                    String setterName    = getAccessorName.apply("set",key);
-                    method = clz.getMethod(setterName);
-                    System.out.println("  setter        =" + setterName) ;
-
+                    Field field         = clz.getDeclaredField(key);
+                    Class fieldType     = field.getType();
+                    String setterName   = getAccessorName.apply("set",key);
+                    method              = clz.getMethod(setterName,fieldType);
                }
-               catch (NoSuchMethodException  e  ) {
-                   continue;
+               catch (NoSuchMethodException  | NoSuchFieldException e  ) {
+                   e.printStackTrace();
+                   break;
                }
 
             if (value instanceof List) {
+                System.out.println("list:");
                 List<BasementObject> table  = new ArrayList<>();
                 Iterator listIterator       = ((List) value).iterator();
-                BasementObject rowDocument  = null;
+                //BasementObject rowDocument  = null;
                 while (listIterator.hasNext()) {
 
-                    Track listValue        = (Track)listIterator.next();
-                    Class  clazzListValue   = listValue.getClass();
-                    String basicParentClassName  = object.getClass().getName();
-                    String suffix = firstLetterUpper(listValue.getType().toString(),true);
-                    String relationalClassName   = basicParentClassName.replace(suffix,"Rows"+suffix);
-                    BasementObject relationalInstance = null;
+                    Map<String,Object> listValue        = (Map<String,Object>)listIterator.next();
+
+                    Class  clazzListValue               = listValue.getClass();
+                    String basicParentClassName         = object.getClass().getName();
+                    String type                         = getType(object).toString();
+
+                    String suffix                       = firstLetterUpper(type, true);
+                    String relationalClassName          = basicParentClassName.replace(suffix,"Rows"+suffix);
+
+                    BasementObject relationalInstance   = null;
 
                     try {
                         relationalInstance = (BasementObject)Class.forName(relationalClassName).newInstance();
                     }
                     catch (ClassNotFoundException| InstantiationException | IllegalAccessException e) {
-                        continue;
+                        e.printStackTrace();
+                        break;
                     }
 
-                    fillObject(((Track)listValue).getAttributes(),relationalInstance);
-                    table.add(rowDocument);
+                    fillObject(listValue, relationalInstance);
+
+                    table.add(relationalInstance);
                 }
 
+                try {
+                    method.invoke(object,table);
+
+                }
+                catch (IllegalAccessException | InvocationTargetException e ) {
+                    e.printStackTrace();
+                    break;
+                }
 
             }
             else {
@@ -139,7 +236,7 @@ public class DtoFactory {
                     method.invoke(object,value);
                 }
                 catch (IllegalAccessException | InvocationTargetException e ) {
-                    continue;
+                    break;
                 }
             }
         }
@@ -157,10 +254,9 @@ public class DtoFactory {
                 Iterator listIterator = ((List) value).iterator();
                 List<Document> table = new ArrayList<>();
                 while (listIterator.hasNext()) {
-                    Track listValue = (Track)listIterator.next();
+                    Map<String,Object> listValue = (Map<String,Object>)listIterator.next();
                     Class  clazzListValue = listValue.getClass();
-
-                    rowDocument = toDocument(listValue.getAttributes());
+                    rowDocument = toDocument(listValue);
                     table.add(rowDocument);
                 }
 
@@ -175,8 +271,18 @@ public class DtoFactory {
         return doc;
     }
 
-    public static EntityObject toEntity() {
-        return null;
+    public static EntityObject toEntity(Track dto, Class clazz) {
+        EntityObject entityObject = null;
+        try {
+            entityObject = (EntityObject)clazz.newInstance();
+        }
+        catch (IllegalAccessException | InstantiationException e) {
+            e.printStackTrace();
+        }
+
+        fillObject(dto.getAttributes(), entityObject);
+
+        return entityObject;
     }
 
     public static DomainObject toDomain(Track dto, Class clazz) {

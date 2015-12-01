@@ -1,6 +1,7 @@
 package me.jarad.mongo.persistance;
 
 import com.mongodb.DBObject;
+import me.jarad.mongo.view.Views;
 import org.mongodb.morphia.annotations.*;
 
 import java.util.ArrayList;
@@ -63,6 +64,9 @@ public class DocumentRowsEntity implements EntityObject {
     @Property("sun")
     private double sum;
 
+    public String toString() {
+        return Views.toStringView(this);
+    }
 
     @PreSave()
     public void beforeSave(DBObject dbObj) {
@@ -70,7 +74,7 @@ public class DocumentRowsEntity implements EntityObject {
         int count = (int)dbObj.get("count");
         double price = (double)dbObj.get("price");
 
-        dbObj.put("sun",count * price);
+        dbObj.put("sun", count * price);
 
 
     }

@@ -1,6 +1,6 @@
-package me.jarad.mongo.business;
+package me.jarad.mongo.business.pojo;
 
-import me.jarad.mongo.persistance.EntityObject;
+import me.jarad.mongo.view.Views;
 
 
 /**
@@ -8,7 +8,7 @@ import me.jarad.mongo.persistance.EntityObject;
  */
 
 
-public class DocumentRowsDomain implements EntityObject {
+public class DocumentRowsDomain implements DomainObject {
 
 
     private int row_id;
@@ -59,7 +59,12 @@ public class DocumentRowsDomain implements EntityObject {
     }
 
 
-    DocumentRowsDomain() {
+    public DocumentRowsDomain() {
 
+    }
+
+    @Override
+    public String toString() {
+        return Views.toStringView(this);
     }
 }

@@ -1,6 +1,4 @@
-package me.jarad.mongo.business;
-
-import org.bson.types.ObjectId;
+package me.jarad.mongo.business.pojo;
 
 /**
  * Created by vitaly on 26.11.2015.

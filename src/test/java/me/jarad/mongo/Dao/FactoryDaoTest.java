@@ -1,7 +1,7 @@
 package me.jarad.mongo.dao;
 
-import me.jarad.mongo.business.DocumentDomain;
-import me.jarad.mongo.business.DomainObject;
+import me.jarad.mongo.business.pojo.DocumentDomain;
+import me.jarad.mongo.business.pojo.DomainObject;
 import me.jarad.mongo.dao.gears.StrategyDao;
 import me.jarad.mongo.dto.DtoFactory;
 import me.jarad.mongo.dto.Track;
@@ -25,9 +25,12 @@ public class FactoryDaoTest {
         Track dtoDoc = new Track(document);
         System.out.println("dto = " + dtoDoc.toString());
 
-        //DomainObject docDomain = new DocumentDomain();
-        //docDomain  = DtoFactory.toDomain(dtoDoc,DocumentDomain.class);
-        //System.out.println(docDomain.toString());
+        DomainObject docDomain = new DocumentDomain();
+        docDomain  = DtoFactory.toDomain(dtoDoc,DocumentDomain.class);
+        System.out.println(docDomain.toString());
+
+        Track dtoDoc2 = new Track(docDomain);
+        System.out.println("dto2 = " + dtoDoc.toString());
 
         assertTrue(document != null);
 

@@ -1,4 +1,4 @@
-package me.jarad.mongo.business;
+package me.jarad.mongo.business.pojo;
 
 import me.jarad.mongo.service.BasementObject;
 import org.bson.types.ObjectId;
